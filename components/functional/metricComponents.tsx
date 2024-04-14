@@ -131,9 +131,11 @@ export function MetricComponentInput({
                         aria-expanded={open}
                         className="w-[200px] justify-between"
                     >
-                        {selectedGoal ? selectedGoal.name : "Select goal..."}
+                        {selectedGoal
+                            ? selectedGoal.name
+                            : "Select goal..."}
+                        <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
                     </Button>
-                    <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
                 </PopoverTrigger>
                 <PopoverContent className="w-[200px] p-0">
                     <Command>
