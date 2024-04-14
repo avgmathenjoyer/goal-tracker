@@ -1,6 +1,6 @@
 import { Goal, Metric, MetricComponent } from "@prisma/client";
 
-const BASE_URL = "http://localhost:3000"
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL
 
 const APPLICATION_JSON_HEADERS = {
     "Content-Type": "application/json"
