@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Goal Tracker
+
+## Overview
+
+Next.js Goal Tracker is a web application built using Next.js. It provides a platform for users to set and track their goals, while also allowing them to measure their progress using various metrics.
+
+## Features
+
+- **Goal Setting**: Users can effortlessly create and establish their goals within the application, enabling them to achieve their objectives more efficiently and effectively.
+
+- **Metric Tracking**: The application enables users to track their progress using customizable metrics. Users can define the metrics that matter most to their goals and update them as they make progress.
+
+- **User Authentication**: Secure user authentication ensures that each user's data is private and accessible only to them. Users can create accounts, log in, and securely access their goal data.
 
 ## Getting Started
 
-First, run the development server:
+1. **Clone the Repository**: Clone this repository to your local machine.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+   ```bash
+   git clone https://github.com/yourusername/nextjs-goal-tracker.git
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Install Dependencies**: Navigate into the project directory and install the necessary dependencies.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+   ```bash
+   cd nextjs-goal-tracker
+   npm install
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. **Set Up Environment Variables**: Create a `.env.local` file in the root directory and add required environment variables such as database credentials and API keys. You need to set:
+    ```ini
+    NEXTAUTH_URL= #next auth requires url to api auth endpoint. It should be something like: "http://localhost:3000/api/auth"
+    NEXTAUTH_SECRET= #secret used for auth. More infor can be found here https://next-auth.js.org/configuration/options
+    GOOGLE_CLIENT_ID= # client id from Google app dashboard
+    GOOGLE_CLIENT_SECRET = # client secret from Google app dashboard
+    BASE_URL= # base url for your app
+    ```
 
-## Learn More
+4. **Run the Development Server**: Start the development server and open the application in your browser.
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   npm run dev
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+5. **Start Tracking Goals**: Access the application in your browser and start setting and tracking your goals!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Acknowledgements
+
+- Built with [Next.js](https://nextjs.org/)
